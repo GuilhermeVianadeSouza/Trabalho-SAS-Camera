@@ -6,7 +6,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Câmera Evo 4.0</title>
 </head>
-<body class="bg-black text-white font-sans">
+<body class="bg-black text-white font-sans overflow-x-hidden">
 
     <header class="w-full flex items-center justify-between px-8 py-4 ">
         <div class="flex items-center space-x-2">
@@ -25,17 +25,18 @@
         </div>
     </header>
 
-    <main class="relative px-8 mt-10 overflow-hidden">
+    <main class="relative px-32 mt-10 ">
       <div class="flex flex-col md:flex-row items-center justify-between">
-        <div class="absolute top-1/2 left-0 transform -translate-y-1/2 text-[12rem] font-extrabold text-white/5 tracking-tighter select-none z-0">
+        <div class="absolute top-1/2 right-0 transform -translate-y-1/1 text-[257px] font-extrabold text-white tracking-tighter select-none z-0">
           Camera
         </div>
         
-          <div class="absolute right-1/4 top-0 h-full w-72 h-full bg-yellow-500 transform rotate-[25deg] z-0 shadow-xl"></div>
-          <div class="absolute right-1/4 top-0 h-full w-4 h-full bg-black transform rotate-[25deg] z-0 shadow-lg"></div>
+          <div class="absolute right-1/4 top-0 h-full w-72 bg-yellow-500 transform rotate-[25deg] z-0 shadow-xl"></div>
+          <div class="absolute right-1/4 top-0 h-full w-4 bg-black transform rotate-[25deg] z-0 shadow-lg"></div>
         <div class="relative z-10 flex flex-col md:flex-row items-center justify-between"></div>
-        <div class="max-w">
-          <p class="uppercase tracking-widest text-lg text-white mb-2">Professional Series</p>
+        
+        <div class="max-w-">
+          <p class="uppercase tracking-widest text-lg text-white mb-0">Professional Series</p>
           <h1 class="text-8xl font-bold leading-tight">
             Camera <br /> <span class="text-yellow-400">EVO 4.0</span>
           </h1>
@@ -44,17 +45,26 @@
           </p>
 
           <div class="mt-8 flex items-center space-x-4">
-            <button class="bg-yellow-400 text-black px-6 py-3 font-bold rounded-none border-black text-justify transform skew-x-12 inline-block">Buy now $120</button>
-            <div class="">
-
+            <button class="bg-yellow-400 text-black px-8 py-2 font-bold rounded-none border-black text-justify text-lg transform -skew-x-12 -ml-2 relative">Buy now $120</button>
           <div class="relative mt-12 md:mt-0">
             <img src="/img/camera-principal.png" alt="Camera Main" class="w-[500px]">
+            <div class="absolute -bottom-8 left-8 w-full h-2 bg-gradient-to-r from-yellow-400 to-yellow-600 transform rotate-6"></div>
+            <div class="absolute -bottom-12 left-16 w-full h2 bg-black transform rotate-6"></div>
           </div>
-
+        <div class="flex">
+          <div class="border-2 border-yellow-400 rounded-md p-2 bg-black hover:scale-105 transition cursor-pointer">
+            <img src="/img/camera-principal.png" alt="1 quadrado de escolha" class="w-16 h-16 object-contain">
+          </div>
+          <div class="opacity-60 hover:opacity-100 transition cursor-pointer bg-gray-800 rounded-md p-2">
+            <img src="/img/camera-pequena-secundaria.png" alt="2 quadrado de escolha" class="w-16 h-16 object-contain">
+          </div>
+          <div class="opacity-60 hover:opacity-100 transition cursor-pointer bg-gray-800 rounded-md p-2">
+            <img src="/img/camera-virada-pequena.png" alt="3 quadrado de escolha" class="w-16 h-16 object-contain">
+          </div>
+        </div>
             </div>
           </div>
         </div>
-      </div>
     </main>
 
 </body>
