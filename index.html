@@ -6,8 +6,50 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Câmera Evo 4.0</title>
 </head>
-<header class="Inicio">pão</header>
-<body>
-    
+<body class="bg-black text-white font-sans">
+    <header class="bg-gray-800 w-full flex items-center justify-between px-8 py-4 ">
+        <div class="flex items-center space-x-2">
+            <img src="./img/logo-empresa.png" alt="Logo" class="w-[50px] h-[52px]">
+            <span class="font-bold text-white tetx-lg">Camera Store</span>
+        </div>
+        <nav class="space-x-6 text-white font-medium hidden md:flex">
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Store</a>
+            <a href="#">Contact</a>
+        </nav>
+            <div class="flex items-center space-x-4">
+            <img src="/img/pesquisa.png" alt="Lupa" class="w-6 h-6 cursor-pointer" />
+            <img src="/img/carrinho.png" alt="Compra" class="w-6 h-6 cursor-pointer" />
+        </div>
+    </header>
+    <main class="relative overflow-hidden">
+    <!-- Faixa amarela inclinada -->
+    <div class="absolute -left-10 top-0 h-full w-[200px] bg-yellow-500 rotate-[20deg] z-0"></div>
+    <div class="absolute -left-6 top-0 h-full w-[200px] bg-yellow-700 rotate-[20deg] z-0"></div>
+
+    <!-- Conteúdo principal -->
+    <div class="relative z-10 flex flex-col md:flex-row items-center justify-between px-8 py-20 max-w-7xl mx-auto">
+
+      <!-- Texto -->
+      <div class="max-w-xl space-y-6">
+        <h2 class="text-gray-400 uppercase tracking-widest text-sm">Professional Series</h2>
+        <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+          Camera <br /> EVO <span class="text-yellow-400">4.0</span>
+        </h1>
+        <p class="text-gray-300">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien cursus integer diam varius ac pellentesque eu nec mus.
+        </p>
+        <button class="bg-yellow-400 text-black font-bold px-6 py-3 mt-4 hover:bg-yellow-500 transition">
+          Buy now <span class="ml-2">$120</span>
+        </button>
+      </div>
+
+      <!-- Imagem da câmera -->
+      <div class="mt-12 md:mt-0 md:ml-12">
+        <img src="/img/camera-principal.png" alt="Camera" class="w-[400px] max-w-full drop-shadow-lg" />
+      </div>
+    </div>
+  </main>
 </body>
 </html>
