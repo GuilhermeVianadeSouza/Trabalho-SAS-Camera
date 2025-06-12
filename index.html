@@ -6,16 +6,19 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Câmera Evo 4.0</title>
 </head>
-<body class="bg-black text-white font-sans overflow-x-hidden">
+<body class="h-full w-full bg-black text-white font-sans overflow-x-hidden">
 
-  <div>
-    <div class="absolute right-32 top-30 h-screen w-[20%] bg-yellow-500 transform rotate-[25deg] origin-top-right z-1 shadow-xl"></div>
-    <div class="absolute right-36 top-0 h-full w-4 bg-yellow-500 origin-top-right transform rotate-[25deg] z-1 shadow-xl"></div>
-  </div>
+  <div class="absolute top-0 left-0 -z-1 object-contain w-screen h-screen overflow-hidden">
+    <div class="absolute right-140 -top-30 -z-1 object-contain w-32 h-400 bg-[#F1AF00] rotate-27 
+            max-[641px]:right-118 
+            max-[321px]:right-82 max-[321px]:w-19"></div>
+        <div class="absolute right-128 -top-30 -z-1 object-contain w-5 h-400 bg-[#F1AF00] rotate-27 
+            max-[641px]:right-105 
+            max-[321px]:right-75 max-[321px]:w-3"></div>
 
-  <header class="w-full flex items-center justify-between px-8 py-4 z-20 relative">
+  <header class="w-screen flex items-center justify-between px-8 py-4 z-20 relative">
     <div class="flex items-center space-x-2">
-      <img src="./img/logo-empresa.png" alt="Logo" class="w-[50px] h-[52px]">
+      <img src="./img/Icone.png" alt="Logo" class="w-[50px] h-[52px]">
             <span class="font-bold text-white text-lg">Camera Store</span>
     </div>
     <nav class="space-x-6 text-white font-medium hidden md:flex">
@@ -30,37 +33,38 @@
     </div>
   </header>
 
-    <main class="relative min-h-screen bg-black overflow-hidden">
+    <main class="">
         
-        <div class="absolute top-1/2 right-[-14rem] transform -translate-y-1/1 text-[257px] font-extrabold text-white/10 tracking-tighter select-none z-0">
+        <div class="absolute top-1/2 right-[-36rem] transform -translate-y-1/1 text-[257px] font-extrabold text-white/10 tracking-tighter select-none -z-2">
           CAMERA
         </div>
 
-      <div class="container mx-auto px-4 md:px-8 relative z-10 py-10">
-        <div class="flex flex-col md:flex-row items-center justify-between">
+      <div class="container mx-auto px-4 md:px-8 relative z-0 py-10">
+        <div class="">
 
         <div class="w-full md:w-1/2 lg:w-2/5 xl:w-2/5 pr-4">
-          <p class="uppercase tracking-widest text-lg text-white mb-0">Professional Series</p>
-          <h1 class="text-6xl sm:text-7xl md:text8xl font-bold leading-tight text-white">
+          <p class="hidden uppercase tracking-widest text-lg text-white mb-0">Professional Series</p>
+          <h1 class="text-8xl sm:text-7xl md:text-8xl font-bold leading-tight text-white">
             Camera <br /> <span class="text-yellow-400">EVO 4.0</span>
           </h1>
-          <p class="mt-6 text-white leading-relaxed text-sm text-wrap">
+          <p class="hidden mt-6 text-white leading-relaxed text-sm text-wrap">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, quo. Sapiente, commodi harum, expedita eveniet, autem minima laudantium inventore voluptates recusandae magnam consequatur laboriosam. At quas quos sit rerum quo!
           </p>
 
           <div class="mt-8 flex items-center space-x-6">
             <button class="bg-yellow-400 text-black px-6 py-3 font-bold rounded-none border-black text-justify text-lg transform -skew-x-12 -ml-2 relative focus:outline-none">Buy now $120</button>
-            <button class="bg-orange-400 textwhite flex items-center justify-center py-4 px-4 transform -skew-x-12 -ml-2 relative">
+            <button class="bg-orange-400 textwhite flex items-center justify-center py-4 px-4 transform -skew-x-12 -ml-2 ">
               <span class="transform skew-x-12 inline-block">
                <img src="/img/Seta.png" alt="Seta" class="w-5 h-5">
               </span>
             </button>
           </div>
 
-          <div class="w-full md:w-1/2 lg:w-3/5 xl:w3-5 relative mt-12 md:mt-0 md:ml-auto flex flex-col items-center origin-top-right">
-            <img src="/img/camera-principal.png" alt="Camera Main" class="w-[500px]">
-            <div class="absolute -bottom-8 left-8 w-full h-2 bg-gradient-to-r transform rotate-6"></div>
-            <div class="absolute -bottom-12 left-16 w-full h-2 bg-black transform rotate-6"></div>
+          <div class="max-[321px]:flex max-[321px]:flex-row-reverse max-[321px]:justify-between max-[321px]:pt-6">
+            <div>
+                <img src="./img/camera-principal.png" class="absolute right-0 top-0 
+                max-[641px]:w-96 max-[641px]:static
+                max-[321px]:w-63" alt="">
           </div>
 
         <div class="flex space-x-4 mt-4">
